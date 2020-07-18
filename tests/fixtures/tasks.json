@@ -1,0 +1,18 @@
+[
+  {
+    "model": "client_api.responsible",
+    "pk": 1,
+    "fields": {
+      "fio": "Genadiy",
+      "position": "HR"
+    }
+  },
+  {
+    "model": "client_api.client",
+    "pk": 1,
+    "fields": {
+      "fio": "Genadiy",
+      "phone": "+79998822453"
+    }
+  }
+]
