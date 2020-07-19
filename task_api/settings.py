@@ -74,6 +74,15 @@ WSGI_APPLICATION = 'task_api.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#     'NAME': 'django_db',
+#     'USER': 'user_name',
+#     'PASSWORD': 'password',
+#     'HOST': '127.0.0.1',
+#     'PORT': '5432',
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -112,10 +121,9 @@ LANGUAGE_CODE = 'en-us'
 DATETIME_FORMAT = '%Y-%m-%d %H:%M'
 TIME_ZONE = 'UTC'
 
+# uncomment if you need this
 # USE_I18N = True
-
 # USE_L10N = True
-
 # USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)

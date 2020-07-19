@@ -1,5 +1,4 @@
 from django.core.management import call_command
-from django.core.management.commands.loaddata import Command
 from pytest import fixture
 
 
@@ -42,6 +41,7 @@ def task_data():
         "responsible": 1,
         "client": 1
     }
+
 
 @fixture
 def task_update_data():

@@ -2,7 +2,7 @@ from django.test.client import Client
 from django.urls import reverse
 from pytest import mark
 from client_api.models import Responsible, Task
-from client_api.models import Client as model_client
+from client_api.models import Client as modelClient
 from django.forms.models import model_to_dict
 
 
@@ -21,7 +21,7 @@ def crud_operations(client: Client, client_data, client_updated_data, path, sele
 
 @mark.django_db
 def test_client(client: Client, client_data, client_updated_data):
-    crud_operations(client, client_data, client_updated_data, "client", model_client)
+    crud_operations(client, client_data, client_updated_data, "client", modelClient)
 
 
 @mark.django_db
@@ -31,5 +31,5 @@ def test_responsible(client: Client, responsible_data, responsible_updated_data)
 
 @mark.django_db
 def test_tasks(client: Client, task_data, task_update_data, tasks_db_setup):
-    assert model_client.objects.exists()
+    assert modelClient.objects.exists()
     crud_operations(client, task_data, task_update_data, "task", Task)

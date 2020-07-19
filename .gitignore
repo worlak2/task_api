@@ -1,2 +1,13 @@
 # Project exclude paths
 /venv/
+db.sqlite3
+.idea*
+.pytest_cache
+task_api/__pychase*
+task_api/__pycache__/
+
+client_api/__pycache__/
+
+tests/__pycache__/
+
+*.pyc
