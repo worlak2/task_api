@@ -1,5 +1,6 @@
 # task_api
 ---
+python3.8
 1. For run this app create virtualenv and activate it for you console (python3 -m venv venv)
 2. Install requirements (pip3 install -r requirements)
 3. After install requirements start tests (pytest)
